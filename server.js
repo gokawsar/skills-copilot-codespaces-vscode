@@ -16,10 +16,14 @@ app.get('/api/greet/:name', (req, res) => {
 
 // API endpoint to calculate factorial
 app.get('/api/factorial/:number', (req, res) => {
-  const num = parseInt(req.params.number);
+  const num = parseInt(req.params.number, 10);
   
   if (isNaN(num) || num < 0) {
     return res.status(400).json({ error: 'Please provide a valid non-negative number' });
+  }
+  
+  if (num > 170) {
+    return res.status(400).json({ error: 'Number too large. Please provide a number less than or equal to 170' });
   }
   
   let result = 1;
