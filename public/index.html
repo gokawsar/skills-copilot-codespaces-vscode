@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Project - Skills Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Demo Project</h1>
+            <p class="subtitle">A simple web application built with Node.js and Express</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>👋 Greeting Generator</h2>
+                <div class="input-group">
+                    <input type="text" id="nameInput" placeholder="Enter your name" />
+                    <button id="greetBtn" class="btn-primary">Greet Me</button>
+                </div>
+                <div id="greetingResult" class="result"></div>
+            </section>
+
+            <section class="card">
+                <h2>🔢 Factorial Calculator</h2>
+                <div class="input-group">
+                    <input type="number" id="numberInput" placeholder="Enter a number" min="0" />
+                    <button id="calcBtn" class="btn-primary">Calculate</button>
+                </div>
+                <div id="factorialResult" class="result"></div>
+            </section>
+
+            <section class="card info">
+                <h2>📚 About This Demo</h2>
+                <p>This is a demo project that demonstrates:</p>
+                <ul>
+                    <li>Express.js server setup</li>
+                    <li>RESTful API endpoints</li>
+                    <li>Frontend-backend communication</li>
+                    <li>Modern HTML, CSS, and JavaScript</li>
+                    <li>Responsive design</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ for learning GitHub Copilot and Codespaces</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
